@@ -10,9 +10,8 @@
     url("../../img/hero-background.jpg");
   background-repeat: no-repeat;
   margin-bottom: 94px;
-}
 
-.hero-flex {
+&-flex {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,7 +19,7 @@
   justify-content: center;
 }
 
-.hero-title {
+&-title {
   font-size: 44px;
   font-weight: 900;
   line-height: (calc(60 / 44));
@@ -28,7 +27,7 @@
   color: $main-background-color;
 }
 
-.hero-button {
+&-button {
   color: $second-text-color;
   font-size: 16px;
   font-weight: 700;
@@ -40,4 +39,5 @@
   background: $logo-color;
   border: none;
   margin-top: 30px;
+}
 }

@@ -1,30 +1,29 @@
 .work {
   margin-bottom: 94px;
-}
-.work-name,
+
+&-name {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+&-name,
 .team-name {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(42 / 36);
   text-align: center;
 }
-
-.work-name {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
 }
 
-.work-list {
+&-list {
   display: flex;
   justify-content: center;
 }
 
-.work-img-div {
+&-img-div {
   position: relative;
 }
 
-.work-img-h3 {
+&-img-h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +45,7 @@
   opacity: 80%;
 }
 
-.work-item:not(:last-child) {
+&-item:not(:last-child) {
   margin-right: 30px;
+}
 }

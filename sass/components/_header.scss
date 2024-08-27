@@ -1,14 +1,19 @@
 .header {
   background-color: $main-background-color;
   border-bottom: 1px solid $second-text-color;
-}
 
-.header-flex {
+&-flex {
   display: flex;
   align-items: center;
 }
 
-.header-logo,
+&-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+  width: 145px;
+
+&-logo,
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -16,80 +21,69 @@
   line-height: (calc(31 / 26));
 }
 
-.header-logo:is(:hover, :focus),
+&-logo:is(:hover, :focus),
 .footer-logo:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count:infinite;
 }
 
-.logo-start {
+&-logo--start {
   color: $logo-color;
 }
 
-.logo-end {
+&-logo--end {
   color: $main-text-color;
 }
-
-.footer-logo-end {
-  color: $main-background-color;
 }
 
-.header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
-  width: 145px;
-}
-
-.header-nav {
+&-nav {
   line-height: (calc(16 / 14));
   font-weight: 500;
 }
 
-.header-list {
+&-list {
   display: flex;
 }
 
-.header-item {
+&-item--active {
   position: relative;
-}
 
-.header-item:is(:hover, :focus),
-.header-contact-item:is(:hover, :focus) {
+&-item:is(:hover, :focus),
+&-contact-item:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
-.header-item:is(:hover, :focus) .header-link {
+&-item:is(:hover, :focus) .header-link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.header-item:not(:last-child) {
+&-item:not(:last-child) {
   width: 42px;
   margin-right: 51px;
 }
 
-.header-item:nth-child(2) {
+&-item:nth-child(2) {
   width: 69px;
   margin-right: 50px;
 }
 
-.header-item:nth-child(3) {
+&-item:nth-child(3) {
   width: 62px;
 }
+}
 
-.header-link {
+&-link {
   position: relative;
 
   color: $main-text-color;
 
   padding: 10px 0px 32px;
-}
 
-.header-link::before {
+  &-link::before {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -106,19 +100,19 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.header-link:is(:hover, :focus) {
+&-link:is(:hover, :focus) {
   transform: scale(1.25);
 }
 
-.header-link:is(:hover, :focus)::before {
+&-link:is(:hover, :focus)::before {
   transform: scale(1);
 }
 
-.header-link.active {
+&-link--active {
   color: $logo-color;
 }
 
-.header-link.active::after {
+&-link--active::after {
   content: " ";
   
   position: absolute;
@@ -134,8 +128,9 @@
 
   background-color: $logo-color;
 }
+}
 
-.header-contact {
+&-contact {
   font-weight: 500;
   line-height: (calc(16 / 14));
   display: flex;
@@ -143,35 +138,37 @@
   margin-left: auto;
 }
 
-.header-contact-item {
+&-contact-item {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
 
-.header-contact-item:is(:hover, :focus) .header-contact-link {
+  &-contact-item:is(:hover, :focus) .header-contact-link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.header-contact-item:is(:hover, :focus) .header-contact-img {
+&-contact-item:is(:hover, :focus) .header-contact-img {
   fill: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+}
 
-.header-contact-img {
+&-contact-img {
   fill: $third-text-color;
 }
 
-.header-contact-email-img {
+&-contact-email-img {
   margin-right: 10px;
 }
 
-.header-contact-mail {
+&-contact-mail {
   color: $third-text-color;
   margin-right: 30px;
 }
 
-.header-contact-number {
+&-contact-number {
   color: $third-text-color;
 }
+}
+

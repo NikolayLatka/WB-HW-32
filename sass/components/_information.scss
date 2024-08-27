@@ -1,15 +1,14 @@
 .information {
   height: 248px;
   margin-bottom: 94px;
-}
 
-.information-name {
+&-name {
   font-weight: 700;
   line-height: calc(16 / 14);
   margin-bottom: 10px;
 }
 
-.information-list {
+&-list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -18,11 +17,11 @@
   gap: 30px;
 }
 
-.information-item {
+&-item {
   width: 270px;
 }
 
-.information-img-background {
+&-img-background {
   width: 270px;
   height: 120px;
 
@@ -33,7 +32,7 @@
   border-radius: 4px;
 }
 
-.information-img {
+&-img {
   position: relative;
   left: 100px;
   top: 25px;
@@ -44,6 +43,7 @@
   background-color: $team-background-color;
 }
 
-.information-main {
+&-main {
   color: $third-text-color;
+}
 }
