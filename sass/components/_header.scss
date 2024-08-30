@@ -2,88 +2,89 @@
   background-color: $main-background-color;
   border-bottom: 1px solid $second-text-color;
 
-&-flex {
+&--flex {
   display: flex;
   align-items: center;
 }
 
-&-logo {
+&__logo {
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
   width: 145px;
+}
 
-&-logo,
+&__logo,
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: (calc(31 / 26));
-}
 
-&-logo:is(:hover, :focus),
+&__logo:is(:hover, :focus),
 .footer-logo:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count:infinite;
 }
+}
 
-&-logo--start {
+&__logo-start {
   color: $logo-color;
 }
 
-&-logo--end {
+&__logo-end {
   color: $main-text-color;
 }
 }
 
-&-nav {
+// Navigation
+
+.header-nav {
   line-height: (calc(16 / 14));
   font-weight: 500;
-}
 
-&-list {
+&__list {
   display: flex;
 }
 
-&-item--active {
+&__item {
   position: relative;
 
-&-item:is(:hover, :focus),
-&-contact-item:is(:hover, :focus) {
+&__item:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
-&-item:is(:hover, :focus) .header-link {
+  &__item:is(:hover, :focus) .header-link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&-item:not(:last-child) {
+&__item:not(:last-child) {
   width: 42px;
   margin-right: 51px;
 }
 
-&-item:nth-child(2) {
+&__item:nth-child(2) {
   width: 69px;
   margin-right: 50px;
 }
 
-&-item:nth-child(3) {
+&__item:nth-child(3) {
   width: 62px;
 }
 }
 
-&-link {
+&__link {
   position: relative;
 
   color: $main-text-color;
 
   padding: 10px 0px 32px;
 
-  &-link::before {
+  &__link::before {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -100,19 +101,19 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&-link:is(:hover, :focus) {
+&__link:is(:hover, :focus) {
   transform: scale(1.25);
 }
 
-&-link:is(:hover, :focus)::before {
+&__link:is(:hover, :focus)::before {
   transform: scale(1);
 }
 
-&-link--active {
+&__link--active {
   color: $logo-color;
 }
 
-&-link--active::after {
+&__link--active::after {
   content: " ";
   
   position: absolute;
@@ -129,46 +130,53 @@
   background-color: $logo-color;
 }
 }
+}
 
-&-contact {
+// Contacs
+
+.header-contact {
   font-weight: 500;
   line-height: (calc(16 / 14));
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-}
 
-&-contact-item {
+&__item {
   display: flex;
   align-items: center;
   cursor: pointer;
 
-  &-contact-item:is(:hover, :focus) .header-contact-link {
+&__item:is(:hover, :focus) {
+  animation: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+&__item:is(:hover, :focus) &__link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&-contact-item:is(:hover, :focus) .header-contact-img {
+&__item:is(:hover, :focus) &__img {
   fill: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 }
 
-&-contact-img {
+&__img {
   fill: $third-text-color;
 }
 
-&-contact-email-img {
+&__email-img {
   margin-right: 10px;
 }
 
-&-contact-mail {
+&__mail {
   color: $third-text-color;
   margin-right: 30px;
 }
 
-&-contact-number {
+&__number {
   color: $third-text-color;
 }
 }
-

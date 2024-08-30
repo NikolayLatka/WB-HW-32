@@ -1,10 +1,10 @@
 .team {
-  background-color: $team-background-color;
+  background-color: $team__background-color;
   height: 648px;
   margin: 0 auto;
   text-align: center;
 
-&-name {
+&__name {
   display: inline-block;
   margin-top: 94px;
   margin-bottom: 50px;
@@ -12,14 +12,14 @@
   margin-right: auto;
 }
 
-&-list {
+&__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
 
-&-item {
+&__item {
   width: 270px;
   height: 428px;
   border-radius: 0px 0px 4px 4px;
@@ -27,16 +27,16 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background: $main-background-color;
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
   margin-right: 30px;
 }
 }
 
-&-figure {
+&__figure {
   text-align: center;
 }
 
-&-caption {
+&__caption {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(19 / 16);
@@ -44,7 +44,7 @@
   margin-top: 30px;
 }
 
-&-job {
+&__job {
   color: $third-text-color;
   font-size: 16px;
   font-weight: 400;
@@ -53,14 +53,16 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
+}
 
-&-social-media-list {
+// Social-media
+
+.team-social-media {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
 
-&-social-media-item,
+&__item,
 .footer-social-media-item {
   display: flex;
   align-items: center;
@@ -69,7 +71,7 @@
   height: 44px;
   border-radius: 50%;
 
-&-social-media-item:is(:hover, :focus),
+  &__item:is(:hover, :focus),
 .footer-social-media-item:is(:hover, :focus) {
   background: $logo-color;
   cursor: pointer;
@@ -81,18 +83,18 @@
   animation-delay: 150ms;
 }
 
-&-social-media-item:is(:hover, :focus) .team-social-media-svg {
+&__item:is(:hover, :focus) &__svg {
   fill: $main-background-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 }
 
-&-social-media-link {
+&__link {
   width: 100%;
   height: 100%;
 }
 
-&-social-media-svg,
+&__svg,
 .footer-social-media-svg {
   display: block;
   width: 20px;

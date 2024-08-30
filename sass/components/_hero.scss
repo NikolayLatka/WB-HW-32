@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   margin-bottom: 94px;
 
-&-flex {
+&--flex {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-&-title {
+&__title {
   font-size: 44px;
   font-weight: 900;
   line-height: (calc(60 / 44));
@@ -27,7 +27,7 @@
   color: $main-background-color;
 }
 
-&-button {
+&__button {
   color: $second-text-color;
   font-size: 16px;
   font-weight: 700;

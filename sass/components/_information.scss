@@ -2,13 +2,13 @@
   height: 248px;
   margin-bottom: 94px;
 
-&-name {
+&__name {
   font-weight: 700;
   line-height: calc(16 / 14);
   margin-bottom: 10px;
 }
 
-&-list {
+&__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -17,11 +17,11 @@
   gap: 30px;
 }
 
-&-item {
+&__item {
   width: 270px;
 }
 
-&-img-background {
+&__img-background {
   width: 270px;
   height: 120px;
 
@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 
-&-img {
+&__img {
   position: relative;
   left: 100px;
   top: 25px;
@@ -43,7 +43,7 @@
   background-color: $team-background-color;
 }
 
-&-main {
+&__main {
   color: $third-text-color;
 }
 }

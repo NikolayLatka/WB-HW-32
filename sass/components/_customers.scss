@@ -3,7 +3,7 @@
   height: 372px;
   margin-left: 185px;
 
-&-name {
+&__name {
   padding-top: 94px;
   margin-bottom: 50px;
   color: $main-text-color;
@@ -13,26 +13,26 @@
   text-align: center;
 }
 
-&-list {
+&__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-&-item {
+&__item {
   width: 170px;
   height: 92px;
   box-sizing: border-box;
   border: 1px solid $third-text-color;
   border-radius: 4px;
 
-&-item:is(:hover, :focus) {
+&__item:is(:hover, :focus) {
   cursor: pointer;
   border-color: $logo-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&-item:is(:hover, :focus) &-svg {
+&__item:is(:hover, :focus) &__svg {
   fill: $logo-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -42,58 +42,53 @@
 }
 }
 
-&-link {
+&__link {
   display: block;
 }
 
-&-svg {
+&__svg {
   position: relative;
   fill: $third-text-color;
+}
 
-  &svg--first {
+&__svg--first {
   width: 46px;
   height: 52.7px;
   left: 35%;
   top: 20%;
 }
 
-&-svg--second{
+&__svg--second{
   width: 48px;
   height: 60px;
   left: 35%;
   top: 15%;
 }
 
-&-svg--third {
+&__svg--third {
   width: 43.46px;
   height: 41.18px;
   left: 37%;
   top: 25%;
 }
 
-&-svg--fourth {
+&__svg--fourth {
   width: 124.44px;
   height: 80.62px;
   left: 15%;
   top: 10%;
 }
 
-&-svg--fifth {
+&__svg--fifth {
   width: 77.54px;
   height: 60.43px;
   left: 25%;
   top: 15%;
 }
 
-&-svg--sixth {
+&__svg--sixth {
   width: 153.79px;
   height: 103.93px;
   left: 7%;
 }
 }
-}
-
-
-
-
-

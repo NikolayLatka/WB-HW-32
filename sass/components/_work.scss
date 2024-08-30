@@ -1,11 +1,12 @@
 .work {
   margin-bottom: 94px;
 
-&-name {
+&__name {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-&-name,
+
+&__name,
 .team-name {
   font-size: 36px;
   font-weight: 700;
@@ -14,16 +15,16 @@
 }
 }
 
-&-list {
+&__list {
   display: flex;
   justify-content: center;
 }
 
-&-img-div {
+&__img-div {
   position: relative;
 }
 
-&-img-h3 {
+&__img-h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +46,7 @@
   opacity: 80%;
 }
 
-&-item:not(:last-child) {
+&__item:not(:last-child) {
   margin-right: 30px;
 }
 }
