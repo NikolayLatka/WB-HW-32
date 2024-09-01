@@ -2,7 +2,7 @@
   height: 248px;
   margin-bottom: 94px;
 
-&__name {
+&_title {
   font-weight: 700;
   line-height: calc(16 / 14);
   margin-bottom: 10px;
@@ -43,7 +43,7 @@
   background-color: $team-background-color;
 }
 
-&__main {
+&__subtitle {
   color: $third-text-color;
 }
 }
