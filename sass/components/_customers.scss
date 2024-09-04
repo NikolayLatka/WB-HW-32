@@ -26,13 +26,13 @@
   border: 1px solid $third-text-color;
   border-radius: 4px;
 
-&__item:is(:hover, :focus) {
+&:is(:hover, :focus) {
   cursor: pointer;
   border-color: $logo-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&__item:is(:hover, :focus) &__svg {
+&:is(:hover, :focus) .customers__svg {
   fill: $logo-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 

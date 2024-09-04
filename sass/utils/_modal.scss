@@ -93,7 +93,7 @@
 
   padding-left: 42.5px;
 
-  &__input:is(:hover, :focus) {
+  &:is(:hover, :focus) {
   border-color: $logo-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }

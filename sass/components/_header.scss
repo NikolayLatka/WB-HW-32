@@ -14,26 +14,24 @@
   width: 145px;
 }
 
-&__logo,
-.footer-logo {
+&__logo{
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: (calc(31 / 26));
 
-&__logo:is(:hover, :focus),
-.footer-logo:is(:hover, :focus) {
+&:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count:infinite;
 }
 }
 
-&__logo-start {
+&__logo--start {
   color: $logo-color;
 }
 
-&__logo-end {
+&__logo--end {
   color: $main-text-color;
 }
 }
@@ -51,28 +49,28 @@
 &__item {
   position: relative;
 
-&__item:is(:hover, :focus) {
+&:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
-  &__item:is(:hover, :focus) .header-link {
+&:is(:hover, :focus) .header-nav__link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&__item:not(:last-child) {
+&:not(:last-child) {
   width: 42px;
   margin-right: 51px;
 }
 
-&__item:nth-child(2) {
+&:nth-child(2) {
   width: 69px;
   margin-right: 50px;
 }
 
-&__item:nth-child(3) {
+&:nth-child(3) {
   width: 62px;
 }
 }
@@ -84,7 +82,7 @@
 
   padding: 10px 0px 32px;
 
-  &__link::before {
+  &::before {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -101,19 +99,19 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&__link:is(:hover, :focus) {
+&:is(:hover, :focus) {
   transform: scale(1.25);
 }
 
-&__link:is(:hover, :focus)::before {
+&:is(:hover, :focus)::before {
   transform: scale(1);
 }
 
-&__link--active {
+&--active {
   color: $logo-color;
 }
 
-&__link--active::after {
+&--active::after {
   content: " ";
   
   position: absolute;
@@ -146,37 +144,33 @@
   align-items: center;
   cursor: pointer;
 
-&__item:is(:hover, :focus) {
+&:is(:hover, :focus) {
   animation: pulse;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
-&__item:is(:hover, :focus) &__link {
+&:is(:hover, :focus) .header-contact__link {
   color: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-&__item:is(:hover, :focus) &__img {
+&:is(:hover, :focus) .header-contact__img {
   fill: $logo-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 }
 
 &__img {
-  fill: $third-text-color;
-}
-
-&__email-img {
+  fill: $third-text-color; 
   margin-right: 10px;
 }
 
-&__mail {
+&__link {
   color: $third-text-color;
-  margin-right: 30px;
 }
 
-&__number {
-  color: $third-text-color;
+&__mail {
+  margin-right: 30px;
 }
 }

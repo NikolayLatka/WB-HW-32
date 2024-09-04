@@ -2,12 +2,6 @@
   height: 248px;
   margin-bottom: 94px;
 
-&_title {
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  margin-bottom: 10px;
-}
-
 &__list {
   display: flex;
   margin-left: auto;
@@ -41,6 +35,12 @@
   height: 70px;
 
   background-color: $team-background-color;
+}
+
+&__title {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  margin-bottom: 10px;
 }
 
 &__subtitle {
