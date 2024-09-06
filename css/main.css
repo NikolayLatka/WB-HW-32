@@ -85,7 +85,7 @@ body {
   overflow: hidden;
 }
 
-.main-portfolio {
+.portfolio {
   margin-bottom: 94px;
 }
 
@@ -991,7 +991,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
 }
 .projects-list__item {
   position: relative;
